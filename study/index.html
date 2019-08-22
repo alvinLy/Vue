@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=0">
+      <meta name="format-detection" content="telephone=no">
+      <title>{[#SITE_TITLE#]}</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css" media="all">
+      <link rel="stylesheet" href="css/style.css" media="all">
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+   </head>
+   <body>
+      <div class="container">
+         <div id="app">         
+            <!-- <span v-if="seen">Can you see me</span> -->
+            <!-- IF -->
+
+
+            <!-- <ol>
+               <li v-for="todo in todos">
+                  {{todo.text}}
+               </li>
+            </ol> -->
+            <!-- FOR -->
+            
+
+            <!-- <p>{{ message }}</p>
+            <button class="btn" v-on:click="reverseMessage"></button> -->
+            <!-- CLICK -->
+
+
+            <!-- <p>{{ message }}</p>
+            <input type="text" v-model="message" class="form-control"> -->
+            <!-- Model -->
+            
+
+            <!-- <ol>
+               <todo-item></todo-item>
+               <todo-item></todo-item>
+            </ol> -->
+            <!-- COMPONETS -->
+            
+
+            <!-- <ol>
+               <todo-item v-for="i in itemList" v-bind:ax="i" v-bind:key="i.id"></todo-item>
+            </ol> -->
+            <!-- COMPONENT WITH PROPS -->
+
+
+            <!-- <input type="text" v-model="message2">
+            <p v-html="message1.slice(0, 6) + message2"></p> -->
+            <!-- Hello Vue -->
+
+
+            <!-- <h3>Data Binding</h3>
+            <a v-bind:href="url">Google</a>
+            <p>{{ greet('man') }}</p>
+            <p>Name: {{ name }}</p>
+            <p v-html="html"></p> -->
+            <!-- DATA BINDING -->
+            
+
+            <!-- <button v-on:click="add(1)">Add</button>
+            <button v-on:click="minus(1)">Minus</button>
+            <button v-on:dblclick="add(10)">Add 10</button>
+            <button v-on:dblclick="minus(10)">Minus 10</button>
+            <p>My age {{ age }}</p>
+            <div id="canvas" v-on:mousemove="update">{{ x }}, {{ y }}</div> -->
+            <!-- EVENT -->
+
+
+            <!-- <button v-on:click.once="add(1)">Add</button>
+            <button v-on:click="minus(1)">Minus</button>
+            <button v-on:dblclick="add(10)">Add 10</button>
+            <button v-on:dblclick="minus(10)">Minus 10</button>
+            <p>My age {{ age }}</p>
+            <div id="canvas" v-on:mousemove="update">{{ x }}, {{ y }}</div>
+            <a v-on:click.prevent="click" href="https://www.google.com/">https://www.google.com/</a> -->
+            <!-- EVENT Modifier -->
+
+
+            <!-- <label>Name: </label>
+            <input type="text" v-on:keyup.enter="inputName">
+            <label>Age:</label>
+            <input type="text" v-on:keyup="inputAge"> -->
+            <!-- KEYBOARD EVENTS -->
+            
+
+            <!-- <button v-on:click="a++" class="btn btn-primary">add A</button>
+            <button v-on:click="b++" class="btn btn-primary">add B</button>
+            <p>A - {{ a }}</p>
+            <p>B - {{ b }}</p>
+            <p>Age + A = {{ addA }}</p>
+            <p>Age + B = {{ addB }}</p>  -->          
+            <!-- COMPUTED PROPERTIES -->
+
+
+            <!-- <h3>Dynamic CSS</h3>
+            <p><strong>Ex 1</strong></p>
+            <div @click="available = !available" v-bind:class="{ available: available }">
+               <span>ABC</span>
+            </div>    
+            <p><strong>Ex 2</strong></p>
+            <button class="btn" @click="nearby = !nearby">Add near</button>
+            <button class="btn" @click="available = !available">Add available</button>
+            <div v-bind:class="addClass">
+               <span>DEF</span>
+            </div> -->
+            <!-- Dynamic CSS Classes -->
+
+            
+            <!-- <h3>Conditionals</h3>
+            <button class="btn btn-danger" @click="error = !error">Error</button>
+            <button class="btn btn-success" @click="success = !success">Success</button> -->
+            <!-- <p v-if="error" class="text-danger">Error</p>
+            <p v-else-if="success" class="text-success">Sucess</p> -->
+            <!-- <p v-show="error" class="text-danger">Error</p>
+            <p v-show="success" class="text-success">Sucess</p> -->
+            <!-- Conditional -->
+
+
+            <!-- <h3>Looping</h3>
+            <ul class="list-inline">
+               <li v-for="i in words">{{ i }}</li>
+            </ul>
+            <ul class="list-unstyled">
+               <li v-for="(i, n) in arr">{{ n+=1 }}. {{ i.name }}: {{ i.age }}</li>
+            </ul>            
+            <dl class="dl-horizontal">
+               <template v-for="info in arr">
+                  <dt>Name: {{ info.name }}</dt>
+                  <dd>Age: {{ info.age }}</dd>
+               </template>
+            </dl>
+            <table class="table">
+               <template v-for="obj in arr">
+               <tr v-for="(val, key) in obj">
+                  <th class="table-bordered">{{ key }}</th>
+                  <td class="table-bordered">{{ val }}</td>
+               </tr>
+               </template>
+            </table> -->
+            <!-- LOOPING -->
+
+            <!-- <input type="text" ref="input">
+            <button class="btn btn-primary" @click="readRef">Button</button>
+            <p>Output ref: {{ output }}</p> 
+            <p class="text-success" ref="test">Hello</p> -->
+            <!-- Ref -->
+
+            <!-- <div class="content">
+               <h1 class="title">Coffee Plans</h1>
+
+               <h2 class="subtitle">
+                  we travel the world to source the very best single origin coffee for you
+               </h2>
+
+               <plan-picker></plan-picker>
+            </div> -->
+
+
+            <h1 v-swap-color="['red', 'green', 'blue', 'white']">Vue Directive</h1>
+         </div>
+
+         <!-- <div id="app-one">
+            <demo></demo>
+         </div>
+
+         <div id="app-two">
+            <demo></demo>
+         </div> -->
+         <!-- Component -->
+      </div>
+      
+      <script type="text/x-template" id="plan-picker-template">
+         <ul class="plans">
+            <plan v-for="plan in plans" :name="plan" @select="selectPlan" :selected-plan="selectedPlan"></plan>
+         </ul>
+      </script>
+      
+      <script type="text/x-template" id="plan-template">
+         <li class="plan" @click="select" :class="{ 'active-plan': isSelected }">
+            <div class="description"><span class="title">{{ name }}</span></div>
+         </li>
+      </script>
+
+      <script src="js/directive/script.js"></script>
+      <script type="text/javascript">
+         "use strict"
+         // for(let msg of ['how', 'are', 'you']){
+         //    console.log(msg)
+         // }
+
+         // function fun(arg){
+         //    if (!arg) {
+         //       arg = "world"
+         //    }
+         //    return "hello, " + arg + "!"
+         // }
+
+         // console.log(fun)
+         // console.log(fun());
+         // console.log(fun('js'));
+
+         // var app = new Vue({
+         //    el:'#app',
+         //    data: {
+         //       message1: 'Hello World',
+         //       message2: 'Vue'
+         //    }
+         // })
+         // EXP 1
+      </script>
+   </body>
+</html>
