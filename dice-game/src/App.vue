@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     handleCreateGame() {
-      this.isOpenPopup = true
+      this.isOpenPopup = true;
     }
   },
 }
