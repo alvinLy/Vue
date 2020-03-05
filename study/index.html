@@ -160,6 +160,17 @@
 
 
             <h1 v-swap-color="['red', 'green', 'blue', 'white']">Vue Directive</h1>
+
+            <div class="dropdown">
+               <button class="btn btn-secondary dropdown-toggle" v-dropdown-menu="'dropdown'">
+                 Dropdown
+               </button>
+               <div class="dropdown-menu" hide-name="dropdown">
+                 <button class="dropdown-item" type="button">Action</button>
+                 <button class="dropdown-item" type="button">Another action</button>
+                 <button class="dropdown-item" type="button">Something else here</button>
+               </div>
+             </div>
          </div>
 
          <!-- <div id="app-one">
